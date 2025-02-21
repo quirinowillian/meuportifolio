@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <!-- Link do Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Willian Quirino - Meu Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aprendizado">Aprendizado</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seção de Apresentação -->
+    <header class="jumbotron text-center py-5">
+        <h1>Bem-vindo ao meu Portfólio!</h1>
+        <p class="lead">Aqui você encontrará meus projetos e um pouco sobre mim.</p>
+    </header>
+
+    <!-- Sobre mim -->
+    <section id="sobre" class="container py-5">
+        <h2>Sobre Mim</h2>
+        <p>Sou estudante de Análise e Desenvolvimento de Sistemas, apaixonado por programação e por aprender novas tecnologias. Estou criando este portfólio para compartilhar meus projetos e aprender mais sobre desenvolvimento web.</p>
+    </section>
+
+    <!-- O que estou aprendendo e o que quero aprender -->
+    <section id="aprendizado" class="container py-5">
+        <h2>O que estou aprendendo e o que quero aprender</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>O que estou aprendendo:</h4>
+                <ul>
+                    <li><strong>JavaScript:</strong> Manipulação de DOM, eventos e funções.</li>
+                    <li><strong>HTML5:</strong> Estruturas semânticas e boas práticas.</li>
+                    <li><strong>CSS3:</strong> Estilização avançada e responsividade.</li>
+                    <li><strong>Banco de Dados:</strong> Noções de SQL e gerenciamento de dados.</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>O que quero aprender:</h4>
+                <ul>
+                    <li><strong>Frameworks JavaScript:</strong> React ou Vue.js.</li>
+                    <li><strong>Node.js:</strong> Backend com JavaScript.</li>
+                    <li><strong>APIs RESTful:</strong> Construção de APIs e consumo de dados.</li>
+                    <li><strong>DevOps:</strong> Melhoria do processo de integração contínua e entrega.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="container py-5">
+        <h2>Meus Projetos</h2>
+        <div class="row">
+            <!-- Projeto Calculadora -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="pngwing.com.png" class="card-img-top" alt="Calculadora">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculadora</h5>
+                        <p class="card-text">Uma calculadora simples feita com JavaScript.</p>
+                        <a href="https://github.com/quirinowillian/calculadora-js.git" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto Conversor de Temperatura -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="thermometers_hot_and_cold.jpg" class="card-img-top" alt="Conversor de Temperatura">
+                    <div class="card-body">
+                        <h5 class="card-title">Conversor de Temperatura</h5>
+                        <p class="card-text">Um conversor de temperatura entre Celsius, Fahrenheit e Kelvin.</p>
+                        <a href="https://github.com/quirinowillian/conversor-temperatura.git" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto Lista de Tarefas -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="618.jpg" class="card-img-top" alt="Lista de Tarefas">
+                    <div class="card-body">
+                        <h5 class="card-title">Lista de Tarefas</h5>
+                        <p class="card-text">Uma aplicação simples para gerenciar suas tarefas, adicionar, remover e marcar como concluídas.</p>
+                        <a href="https://github.com/quirinowillian/lista-de-tarefas.git" class="btn btn-primary" target="_blank">Ver no GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="container py-5">
+        <h2>Contato</h2>
+        <p>Você pode me encontrar nas redes sociais ou enviar uma mensagem diretamente aqui:</p>
+        <!-- Formulário de contato -->
+        <form action="#" method="POST">
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="text-center py-4">
+        <p>&copy; 2025 Willian Quirino | Todos os direitos reservados</p>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
